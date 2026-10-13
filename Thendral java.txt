@@ -1,157 +1,37 @@
 Question:1
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, Java! Welcome to Programming.");
-        System.out.println("My journey starts today.");
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+    int number=9;
+    String result=(number%2==0)?"even":"odd";
+    System.out.println("number is"+ result +number);
     }
-} 
+}
+    
+Question:2
 
-Question 2
-
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("College: ABC Engineering College");
-        System.out.println("Department: Computer Science");
-        System.out.println("Course: Java Programming");
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+    int a=8;
+    int b=10;
+    String result =(a>b) ? "greater" : (a==b) ? "equal" :  "less";
+    System.out.println(result);
     }
 }
 
-Qustion 3
+Question:3
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.print("Java is simple ");
-        System.out.print("Java is powerful");
+import java.util.*;
+public class Main{
+    public static void main (String[]args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the first number:");
+    int a=sc.nextInt();
+    sc.nextLine();
+    String value=(a<0) ? "neative":"positive";
+    System.out.println(a);
+    System.out.println(value);
     }
 }
-
-Question 4
-
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Name\t: Arun");
-        System.out.println("Course\t: Java");
-        System.out.println("Level\t: Beginner");
-    }
-}
-
-question 5
-
-public class Main {
-    public static void main(String[] args) {
-        String name = "Arun";
-        int age = 21;
-        char grade = 'A';
-        boolean placementStatus = true;
-
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Grade: " + grade);
-        System.out.println("Placement Status: " + placementStatus);
-    }
-}
-
-question 6
-
-public class Main {
-    public static void main(String[] args) {
-        long population = 8000000L;
-        double productPrice = 1499.95;
-        char bloodGroupSymbol = 'A';
-        boolean accountVerified = true;
-        String employeeName = "Kavin";
-
-        System.out.println("Population: " + population);
-        System.out.println("Product Price: " + productPrice);
-        System.out.println("Blood Group Symbol: " + bloodGroupSymbol);
-        System.out.println("Account Verified: " + accountVerified);
-        System.out.println("Employee Name: " + employeeName);
-    }
-}
-
-Question 7
-
-public class Main {
-    public static void main(String[] args) {
-        String productName = "Laptop";
-        int productId = 101;
-        double price = 45999.99;
-        boolean availability = true;
-
-        System.out.println("***************************");
-        System.out.println("       PRODUCT CARD       ");
-        System.out.println("***************************");
-        System.out.println("Product Name : " + productName);
-        System.out.println("Product ID   : " + productId);
-        System.out.println("Price        : Rs. " + price);
-        System.out.println("Available    : " + availability);
-        System.out.println("***************************");
-    }
-}
-
-Question 8
-
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int age = sc.nextInt();
-        String city = sc.next();
-
-        System.out.println("Age: " + age);
-        System.out.println("City: " + city);
-
-        sc.close();
-    }
-}
-
-Question 9
-
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String fullName = sc.nextLine();
-        int rollNumber = sc.nextInt();
-        String department = sc.next();
-        double percentage = sc.nextDouble();
-
-        System.out.println("===== REGISTRATION RECEIPT =====");
-        System.out.println("Student Name : " + fullName);
-        System.out.println("Roll Number  : " + rollNumber);
-        System.out.println("Department   : " + department);
-        System.out.println("Percentage   : " + percentage + "%");
-        System.out.println("================================");
-
-        sc.close();
-    }
-}
-
-Question 10
-
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String customerName = sc.nextLine();
-        String movieName = sc.nextLine();
-        int ticketCount = sc.nextInt();
-        double ticketPrice = sc.nextDouble();
-
-        System.out.println("===== BOOKING SUMMARY =====");
-        System.out.println("Customer Name : " + customerName);
-        System.out.println("Movie Name    : " + movieName);
-        System.out.println("Ticket Count  : " + ticketCount);
-        System.out.println("Ticket Price  : Rs. " + ticketPrice);
-        System.out.println("===========================");
-
-        sc.close();
-    }
-
