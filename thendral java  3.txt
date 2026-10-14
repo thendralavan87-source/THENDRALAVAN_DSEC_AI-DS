@@ -1,0 +1,29 @@
+Question:4
+
+import java.util.*;
+public class Main{
+    public static void main (String[]args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the first number:");
+    int a=sc.nextInt();
+    sc.nextLine();
+    String value=(a>18) ? "eligible":"not eligible";
+    System.out.println(a);
+    System.out.println(value);
+    }
+}
+
+Question:5
+
+import java.util.*;
+public class Main{
+    public static void main (String[]args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the first number:");
+    int a=sc.nextInt();
+    sc.nextLine();
+    String value=(a%3==0 && a%5==0) ? "divisible by both":"not divisable by both";
+    System.out.println(a);
+    System.out.println(value);
+    }
+}
